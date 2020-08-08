@@ -27,12 +27,12 @@
 #[macro_export]
 macro_rules! ppmm {
     (++ $n:expr) => {
-        n += 1;
-        n
+        $n += 1;
+        $n
     };
     (-- $n:expr) => {
-        n -= 1;
-        n
+        $n -= 1;
+        $n
     };
 }
 
