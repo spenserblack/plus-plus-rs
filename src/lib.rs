@@ -26,26 +26,26 @@
 
 #[macro_export]
 macro_rules! ppmm {
-    (++ $n:expr) => {
+    (++ $n:ident) => {
         {
             $n += 1;
             $n
         }
     };
-    (-- $n:expr) => {
+    (-- $n:ident) => {
         {
             $n -= 1;
             $n
         }
     };
-    ($n:expr ++) => {
+    ($n:ident ++) => {
         {
             let temp = $n;
             $n += 1;
             temp
         }
     };
-    ($n:expr --) => {
+    ($n:ident --) => {
         {
             let temp = $n;
             $n -= 1;
