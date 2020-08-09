@@ -38,6 +38,20 @@ macro_rules! ppmm {
             $n
         }
     };
+    ($n:expr ++) => {
+        {
+            let temp = $n;
+            $n += 1;
+            temp
+        }
+    };
+    ($n:expr --) => {
+        {
+            let temp = $n;
+            $n -= 1;
+            temp
+        }
+    };
 }
 
 #[cfg(test)]
