@@ -12,8 +12,3 @@ repository = ""
 publish = false # You should at least look at this file before you publish
 
 [dependencies]
-
-[badges]
-is-it-maintained-issue-resolution = { repository = "spenserblack/plus-plus-rs" }
-is-it-maintained-open-issues = { repository = "spenserblack/plus-plus-rs" }
-maintenance = { status = "actively-developed" }
